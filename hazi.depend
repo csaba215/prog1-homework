@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1449155976 source:/home/csaba/hazi/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"main.h"
+
+1449216375 
+
+1449155130 /home/csaba/hazi/main.h
+
+1449155323 /home/csaba/hazi/dekodol.h
+
+1449216375 source:c:\users\127005\desktop\hazi\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"main.h"
+
+1449216376 c:\users\127005\desktop\hazi\main.h
+
+1449415549 source:/home/csaba/hazi vegleges/hazi/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"main.h"
+
+1449415939 /home/csaba/hazi vegleges/hazi/main.h
+
+1449417408 source:/home/csaba/hazi vegleges/hazi/decode.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"main.h"
+
+1449417389 source:/home/csaba/hazi vegleges/hazi/encode.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"main.h"
+

@@ -1,0 +1,13 @@
+/home/csaba/hazi vegleges/hazi/encode.c:74: warning: argument 'ti' of command @param is not found in the argument list of encode(FILE *f, FILE *o, codet *t, char sep)
+/home/csaba/hazi vegleges/hazi/encode.c:74: warning: argument 'ta' of command @param is not found in the argument list of encode(FILE *f, FILE *o, codet *t, char sep)
+/home/csaba/hazi vegleges/hazi/encode.c:74: warning: The following parameters of encode(FILE *f, FILE *o, codet *t, char sep) are not documented:
+  parameter 'sep'
+/home/csaba/hazi vegleges/hazi/main.c:37: warning: argument 'codet' of command @param is not found in the argument list of freet(codet *root)
+/home/csaba/hazi vegleges/hazi/main.c:37: warning: The following parameters of freet(codet *root) are not documented:
+  parameter 'root'
+/home/csaba/hazi vegleges/hazi/main.c:13: warning: argument 'char' of command @param is not found in the argument list of line_check(char *l)
+/home/csaba/hazi vegleges/hazi/main.c:13: warning: The following parameters of line_check(char *l) are not documented:
+  parameter 'l'
+/home/csaba/hazi vegleges/hazi/main.h:10: warning: argument 'char' of command @param is not found in the argument list of line_check(char *l)
+/home/csaba/hazi vegleges/hazi/main.h:10: warning: The following parameters of line_check(char *l) are not documented:
+  parameter 'l'
