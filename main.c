@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include "main.h"
+#include "encode.h"
+#include "decode.h"
 
 /*typedef struct codet
 {
@@ -56,13 +58,14 @@ int main ( int argc, char *argv[] )
     int co=0,ci=0;	// konzol kimenet/bemenet (bool)
     int dir = 0;	//kódolás irány 1:dekódólás 2:enkódólás
     char ti=0,ta=0,sep =0;
-    if ( argc == 2 ) /* Nincs semmi paraméter megadva*/
+    if ( argc == 1 ) /* Nincs semmi paraméter megadva*/
     {
-        fprintf(stderr,"Nincs semmilyen paraméter megadva!\n Segítség elérhető %s -h vagy --help kapcsolóval\n", argv[0]);
+        fprintf(stderr,"Nincs semmilyen paraméter megadva!\nSegítség elérhető %s -h vagy --help kapcsolóval\n", argv[0]);
+        return EXIT_SUCCESS;
     }
     else
     {
-	// Kapcsolók beolvasása a megfelelő változókba       
+	// Kapcsolók beolvasása a megfelelő változókba
 	int i;
         for(i=1; i<argc; i++)
         {
@@ -125,7 +128,7 @@ int main ( int argc, char *argv[] )
         codetf = fopen(ct,"r");
         if(codetf == NULL)
         {
-            fprintf(stderr,"Nem sikerült a kódtáblát megnyitnom!");
+            fprintf(stderr,"Nem sikerült a kódtáblát megnyitnom!\n");
             exit(EXIT_FAILURE);
         }
 
@@ -137,7 +140,7 @@ int main ( int argc, char *argv[] )
         outf = fopen(out,"w");
         if(outf == NULL)
         {
-            fprintf(stderr,"Nem sikerült a kimeneti fájlt megynyitnom!");
+            fprintf(stderr,"Nem sikerült a kimeneti fájlt megynyitnom!\n");
             exit(EXIT_FAILURE);
         }
     }
@@ -148,7 +151,7 @@ int main ( int argc, char *argv[] )
         inf = fopen(in,"r");
         if(inf == NULL)
         {
-            fprintf(stderr,"Nem sikerült a bemeneti fájlt megynyitnom!");
+            fprintf(stderr,"Nem sikerült a bemeneti fájlt megynyitnom!\n");
             exit(EXIT_FAILURE);
         }
     }
